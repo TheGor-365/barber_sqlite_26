@@ -19,11 +19,11 @@
     </div>
 
     <div class="mb-3">
+      <label class="form-label">Choose your barber</label><br>
       <select class="form-select bbb" name="barber">
-        <option selected>Choose your barber</option>
-        <option value="Jessie Pincman">Jessie Pincman</option>
-        <option value="Walter White">Walter White</option>
-        <option value="Gus Fring">Gus Fring</option>
+        <option <%= @barber == 'Jessie Pincman' ? 'selected' : '' %>>Jessie Pincman</option>
+        <option <%= @barber == 'Walter White' ? 'selected' : '' %>>Walter White</option>
+        <option <%= @barber == 'Gus Fring' ? 'selected' : '' %>>Gus Fring</option>
       </select>
     </div>
 
