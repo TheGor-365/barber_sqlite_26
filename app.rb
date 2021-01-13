@@ -89,7 +89,6 @@ post '/visit' do
   @error = input_info.select { |key, _| params[key] == '' }.values.join(', ')
   return erb :visit if @error != ''
 
-
   db = get_db
   db.execute 'insert into Users (
     username,

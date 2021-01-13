@@ -15,7 +15,7 @@
 
     <div class="mb-3">
       <label class="form-label">Your visiting date and time</label>
-      <input name="datetime" type="text" class="form-control bbb" placeholder="Enter date and time" value="<%= @datetime %>">
+      <input id="datetimepicker" name="datetime" type="text" class="form-control bbb" placeholder="Enter date and time" value="<%= @datetime %>" autocomplete="off">
     </div>
 
     <div class="mb-3">
@@ -51,7 +51,9 @@
 
 <script type="text/javascript">
   $(function() {
+    $('#datetimepicker').datetimepicker();
     $('#color').simplecolorpicker();
+
     $('#aaa').css('background-color', '#b4fff6');
     $('.bbb').css('background-color', '#d7feff');
   });
